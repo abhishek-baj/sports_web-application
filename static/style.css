@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+.title{
+    display: flex;
+    justify-content:space-around ;
+    background-color: aliceblue;
+    margin: 0px;
+}
+.logo{
+    height:80px;
+    width:80px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding:10px;
+    border-radius: 5px;
+}
+a:hover{
+    color:blue;
+    transition: .9s;
+}
+
+
+.titlename{
+    font-family: 'Oswald', sans-serif;
+}
+.login{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    border-radius: 5px;
+    padding: 30px;
+    flex-basis: 30%;
+    font-size:20px;
+}
+.container{
+    height:100vh;
+    background-image: url('background.jpg');
+    background-image: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hidden{
+    display: none;
+}
+.errormsg{
+    color:red;
+}
+.entryform{
+    font-family: 'Rajdhani', sans-serif;
+}
+.title h4{
+    font-size: 20px;
+}
+.aboutimg{
+    max-width: 100%;
+
+}
+.abouttext{
+    border: 3px solid violet;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 25px;
+    width:80%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .title {
+        flex-direction: column;
+        text-align: center;
+        font-size: 20px;
+    }
+    .container{
+        width: 100%;
+    }
+    .login{
+        flex-basis: 75%;
+        font-size: 20px;
+    }
+    .title h4{
+        font-size: 25px;
+    }
+    .aboutimg{
+        width: 100%;
+    }
+    .abouttext{
+        font-size: 25px;
+        width: 100%;
+    }
+
+  }

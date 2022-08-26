@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link  rel="stylesheet" href="{% static 'style.css' %}">
+        <link rel = "icon" href = "{% static 'logo.png' %}" type = "image/x-icon">
+    </head>
+    <body>
+        
+        <div class="title">
+            <center><img class="logo" src="{% static 'logo.png' %}"></center>
+            <h1 class="titlename">SPORTZNOTEBOOK</h1>
+            <h4><a href="/signup">Sign Up</a></h4>
+            <h4><a href="/about">About</a></h4>
+            <h4><a href="/report">Report</a></h4>
+        </div>
+    <div class="container">
+        <div class="login">
+            <form method="POST" action="/profile" class="entryform">
+             {% csrf_token %}   
+            <center><h3>Login</h3></center>
+            <center><h4>Username *</h4></center>
+            <center><input name="name" type="text"></center>
+            <center><h4>Password *</h4></center>
+            <center><input name="passcode" type="password"></center>
+            <br><br>
+            <center><button class="submit">Login</button></center>
+            <p class="errormsg hidden">ERROR : Invalid Credentials</p>
+            </form>
+            <br>
+            {% for message in messages %}
+              <center><b style="color:red">{{message}}</b></center>
+            {% endfor %}
+        </div>
+    </div>
+    <script src=""></script>
+    </body>
+</html>

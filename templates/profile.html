@@ -1,0 +1,361 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'main.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel = "icon" href = "{% static 'logo.png' %}" type = "image/x-icon">
+  <title>Sport Notebook</title>
+</head>
+  <header>
+    <div class="header-container">
+      <div class="header-wrapper">
+        <div class="logoBox">
+          <img src="{% static 'images/logo.jpg' %}" alt="logo">
+        </div>
+        <div class="searchBox">
+          <input type="search">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="iconBox1">
+          <i class="fa-solid fa-house-user"></i>
+          <i class="fa-solid fa-user-group"></i>
+          <i class='fa-solid fa-calendar'></i>
+        </div>
+        <div class="iconBox2">
+          <i class="fa-solid fa-circle-plus"></i>
+          <i class="fa-solid fa-message"></i>
+          <i class="fa-solid fa-bell"></i>
+          <label><a href=""><img src="{% static 'images/us.png' %}" alt="user"></a></label>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="home">
+    <div class="container">
+      <div class="home-weapper">
+        <div class="home-left">
+          <div class="profile">
+            <img src="{% static 'images/us.png' %}" alt="user">
+            <h3>{{user}}</h3>
+          </div>
+          <div class="pages">
+            <h4 class="mini-headign">about</h4>
+            <label>
+              <img src="{% static 'images/facebook.png' %}" alt="Message">
+              <span>Facebook</span>
+            </label>
+            <label>
+              <img src="{% static 'images/Instagram_icon.png.webp' %}" alt="instagram">
+              <span>instagram</span>
+            </label>
+            <button class="see-more-btn">See more <i class="fa-solid fa-angle-down"></i></button>
+          </div>
+          <div class="group">
+            <h4 class="mini-headign">Group</h4>
+            <label>
+              <img src="{% static 'images/cricket.png' %}" alt="Cricket">
+              <span>Cricket</span>
+            </label>
+            <label>
+              <img src="{% static 'images/basketball.png' %}" alt="Basketball">
+              <span>Basket Ball</span>
+            </label>
+            <label>
+              <img src="{% static 'images/football.jpg' %}" alt="Football">
+              <span>Football</span>
+            </label>
+            <button class="see-more-btn">See more <i class="fa-solid fa-angle-down"></i></button>
+          </div>
+          <div class="games">
+            <h4 class="mini-headign">Games</h4>
+            <label>
+              <img src="{% static 'images/cricket.png' %}" alt="game01">
+              <span>Cricket</span>
+            </label>
+            <label>
+              <img src="{% static 'images/badminton.jpeg' %}" alt="game02">
+              <span>Badmintion</span>
+            </label>
+            <button class="see-more-btn">See more <i class="fa-solid fa-angle-down"></i></button>
+          </div>
+          <div class="explore">
+            <h4 class="mini-headign">Explore</h4>
+            <a href="#"><i class="fa-solid fa-user-group"></i> Group</a>
+            <a href="#"><i class="fa-solid fa-star"></i></i> Favorites</a>
+            <a href="#"><i class="fa-solid fa-bookmark"></i></i> Saves</a>
+            <a href="#"><i class="fa-solid fa-clock"></i> Events</a>
+            <a href="#"><i class="fa-solid fa-volleyball"></i> Games</a>
+            <div><label class="darkTheme"> <span></span></label> Apply Dark Theme</div>
+            <button class="see-more-btn">See more <i class="fa-solid fa-angle-down"></i></button>
+          </div>
+        </div>
+        <div class="home-center">
+          <div class="home-center-wrapper">
+            <div class="stories">
+              <h3 class="mini-headign">Stories</h3>
+              <div class="stories-wrapper">
+                <div class="single-stories">
+                  <label><img src="{% static 'images/messi.jpeg' %}" alt="user"></label>
+                  <div>
+                    <img src="{% static 'images/messistory.jpg' %}" alt="user">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <b>messi</b>
+                  </div>
+                </div>
+                <div class="single-stories">
+                  <label><img src="{% static 'images/download.jpeg' %}" alt="sp"></label>
+                  <div>
+                    <img src="{% static 'images/saniamirzastory.jpg' %}" alt="ss">
+                    <b>Sania</b>
+                  </div>
+                </div>
+                <div class="single-stories">
+                  <label><img src="{% static 'images/Usain-Bolt-2008.webp' %}" alt="sp2"></label>
+                  <div>
+                    <img src="{% static 'images/Usain_Bolt_story.jpg' %}" alt="ss2">
+                    <b>Usaim bolt</b>
+                  </div>
+                </div>
+                <div class="single-stories">
+                  <label><img src="{% static 'images/ptusha.png' %}" alt="sp3"></label>
+                  <div>
+                    <img src="{% static 'images/pt-usha-story.jpg.crdownload' %}" alt="ss3">
+                    <b>PT.usha</b>
+                  </div>
+                </div>
+                <div class="single-stories">
+                  <label><img src="{% static 'images/15neeraj.jpg' %}" alt="sp4"></label>
+                  <div>
+                    <img src="{% static 'images/Neeraj-Chopra-gold.jpg' %}" alt="ss4">
+                    <b>Your Name</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="createPost">
+              <h3 class="mini-headign">Create Post</h3>
+              <div class="post-text">
+                <img src="{% static 'images/Cristiano_Ronaldo_2018.jpg' %}" alt="user">
+                <input type="text-area" placeholder="What's on your mind">
+              </div>
+              <div class="post-icon">
+                <a href="#" style="background: #ffebed;">
+                  <i style="background: #ff4154;" class="fa-solid fa-camera"></i>
+                  Gallery</a>
+                <a href="#" style="background: #ccdcff;">
+                  <i style="background: #0053ff;" class="fa-solid fa-video"></i>
+                  Video</a>
+                <a href="#" style="background: #d7ffef;">
+                  <i style="background: #00d181;" class="fa-solid fa-location-dot"></i>
+                  Location</a>
+                <a href="#" style="background: #cff3ff;">
+                  <i style="background: #04c3ff;" class="fa-solid fa-gift"></i>
+                  Gift</a>
+                <a href="#" style="background: #fff4d1;">
+                  <i style="background: #ffca28;" class="fa-solid fa-face-grin-beam"></i>
+                  Feeling / Acrivity</a>
+              </div>
+            </div>
+            <div class="fb-post1">
+              <div class="fb-post1-container">
+                <div class="fb-post1-header">
+                  <ul>
+                    <li class="active">post</li>
+                  </ul>
+                </div>
+                <div class="fb-p1-main">
+                  <div class="post-title">
+                    <img src="{% static 'images/licensed-image.jpeg' %}" alt="user picture">
+                    <ul>
+                      <li>
+                        <h3>Rohit Sharma <span> . 2 hours ago</span></h3>
+                      </li>
+                      <li><span>26 Aug at 10:55 AM</span></li>
+                    </ul>
+                    <p>------------------------
+                      <a href="">Tournament going to be held</a>----------------------
+                    </p>
+                  </div>
+                  <div class="post-images">
+                    <div class="post-images1">
+                      <img src="{% static 'images/cricket-tournament-match-design-concept-free-vector.jpg' %}" alt="post images 01">
+                    </div>
+                  </div>
+                  <div class="like-comment">
+                    <ul>
+                      <li>
+                        <img src="{% static 'images/love.jpg' %}" alt="love">
+                        <img src="{% static 'images/like.png' %}" alt="like">
+                        <span>22k like</span>
+                      </li>
+                      <li><i class="fa-regular fa-comment-dots"></i> <span>555 comments</span></li>
+                      <li><i class="fa-solid fa-share-from-square"></i> <span>254 share</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="fb-post1-container">
+                <div class="fb-post1-header">
+                  <ul>
+                    <li class="active">post</li>
+                  </ul>
+                </div>
+                <div class="fb-p1-main">
+                  <div class="post-title">
+                    <img src="{% static 'images/bcci.png' %}" alt="bcci picture">
+                    <ul>
+                      <li>
+                        <h3>BCCI <span> . 2 hours ago</span></h3>
+                      </li>
+                      <li><span>26 Aug at 10:55 AM</span></li>
+                    </ul>
+                    <p>------------------------registration open
+                      <a href="#">Registration for national competion</a>----------------------
+                    </p>
+                  </div>
+                  <div class="post-images">
+                    <div class="post-images1">
+                      <img src="{% static 'images/bccievent.jpg' %}" alt="post images 01">
+                    </div>
+                  </div>
+                  <div class="like-comment">
+                    <ul>
+                      <li>
+                        <img src="{% static 'images/love.jpg' %}" alt="love">
+                        <img src="{% static 'images/like.png' %}" alt="like">
+                        <span>22k like</span>
+                      </li>
+                      <li><i class="fa-regular fa-comment-dots"></i> <span>555 comments</span></li>
+                      <li><i class="fa-solid fa-share-from-square"></i> <span>254 share</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="fb-post1-container">
+                <div class="fb-post1-header">
+                  <ul>
+                    <li class="active">post</li>
+                  </ul>
+                </div>
+                <div class="fb-p1-main">
+                  <div class="post-title">
+                    <img src="{% static 'images/Star_Sports_India_logo1.png' %}" alt="user picture">
+                    <ul>
+                      <li>
+                        <h3>Star Sports <span> . 2 hours ago</span></h3>
+                      </li>
+                      <li><span>26 Aug at 10:55 AM</span></li>
+                    </ul>
+                    <p>------------------------
+                      <a href="#"> Watch Tournament </a>----------------------
+                    </p>
+                  </div>
+                  <div class="post-images">
+                    <div class="post-images1">
+                      <img src="{% static 'images/football tournament.png' %}" alt="post images 01">
+                    </div>
+                  </div>
+                  <div class="like-comment">
+                    <ul>
+                      <li>
+                        <img src="{% static 'images/love.jpg' %}" alt="love">
+                        <img src="{% static 'images/like.png' %}" alt="like">
+                        <span>22k like</span>
+                      </li>
+                      <li><i class="fa-regular fa-comment-dots"></i> <span>555 comments</span></li>
+                      <li><i class="fa-solid fa-share-from-square"></i> <span>254 share</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-right">
+          <div class="home-right-wrapper">
+            <div class="event-friend">
+              <div class="event">
+                <h3 class="heading">Upcoming Events <span>see all</span></h3>
+                <img src="{% static 'images/event.jpg' %}" alt="event-img">
+                <div class="event-date">
+                  <h3>30<b>sep</b></h3>
+                  <h4>United state of America <span>New York City</span></h4>
+                </div>
+                <button><i class="fa-regular fa-star"></i> interested</button>
+              </div>
+              <hr>
+              <div class="friend">
+                <h3 class="heading">Connection Requests <span>see all</span></h3>
+                <ul>
+                  <li><img src="{% static 'images/Neeraj-Chopra-gold.jpg' %}" alt="user"></li>
+                  <li>
+                    <b>Neeraj Chopra</b>
+                    <p>GOld medlist in Olympic.</p>
+                    <button>confirm</button><button class="friend-remove">remove</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="create-page">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-plus"></i>
+                  <h4>Create Page & Groups</h4>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+                <li>
+                  <img src="{% static 'images/group.png' %}" alt="groups">
+                </li>
+                <li>
+                  <b>simple group or page name <span>200k Members</span></b>
+                  <button>Join Group</button>
+                </li>
+              </ul>
+            </div>
+            <div class="messenger">
+              <div class="messenger-search">
+                <i class="fa-solid fa-user-group"></i>
+                <h4>Message</h4>
+                <input type="search" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <ul>
+                <li>
+                  <img src="{% static 'images/pvsindhu.jpg' %}" alt="user">
+                  <b>Pv Sindhu<span>Online</span></b>
+                  <i class="fa-solid fa-Message"></i>
+                </li>
+                <li>
+                  <img src="{% static 'images/Michael-Jordan-20200527083136253.jpg' %}" alt="user">
+                  <b>Michel Jordhan<span>Offline</span></b>
+                  <i class="fa-solid fa-Message"></i>
+                </li>
+                <li>
+                  <img src="{% static 'images/mohammad.jpeg' %}" alt="user">
+                  <b>Mohammad <span>Online</span></b>
+                  <i class="fa-solid fa-Message"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var darkButton = document.querySelector(".darkTheme");
+
+    darkButton.onclick = function() {
+      darkButton.classList.toggle("button-Active");
+      document.body.classList.toggle("dark-color")
+    }
+  </script>
+
+  </body>
+
+</html>

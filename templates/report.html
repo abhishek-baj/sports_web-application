@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <title>Report</title>
+        <link  rel="stylesheet" href="{% static 'style.css' %}">
+        <link rel = "icon" href = "{% static 'logo.png' %}" type = "image/x-icon">
+    </head>
+    <body>
+        
+        <div class="title">
+            <center><img class="logo" src="{% static 'logo.png' %}"></center>
+            <h1 class="titlename">SPORTZNOTEBOOK</h1>
+            <h4><a href="/signup">Sign Up</a></h4>
+            <h4><a href="/about">About</a></h4>
+            <h4><a href="/report">Report</a></h4>
+        </div>
+        <h1 style="text-align: center;font-family: 'Rajdhani', sans-serif;font-weight: bold;">In case of any queries and complaints , do write to us</h1>
+        <h3 style="text-align: center;font-family: 'Rajdhani', sans-serif;font-weight: bold;">For queries :-<a href="mailto: queries@sportznotebook.ac.in"> queries@sportznotebook.ac.in</a></h3>
+        <h3 style="text-align: center;font-family: 'Rajdhani', sans-serif;font-weight: bold;">For complains :-<a href="mailto: complaints@sportznotebook.ac.in"> complaints@sportznotebook.ac.in</a></h3>
+        <h1 style="text-align: center;font-family: 'Rajdhani', sans-serif;font-weight: bold;">Write Us</h1>
+        <form id="queryform">
+            <center><h3 style="text-align: center;font-family: 'Rajdhani', sans-serif;font-weight: bold;">Your email id</h3></center>
+            <center><input name="" type="email" placeholder="Enter your email here..."></input></center>
+            <br>
+            <center><textarea class="txtar" name="" rows="15" cols="50" placeholder="Enter here ......"></textarea></center>
+            <br>
+            <center><input type="submit"></input></center>
+
+        </form>
+    </body>
+    </html>

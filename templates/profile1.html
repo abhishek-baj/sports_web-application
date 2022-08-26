@@ -1,0 +1,230 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/profil.css' %}">
+  <link rel = "icon" href = "{% static 'logo.png' %}" type = "image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>Sport Notebook</title>
+</head>
+  <header>
+    <div class="header-container">
+      <div class="header-wrapper">
+        <div class="logoBox">
+          <img src="{% static 'images1/logo.jpg' %}" alt="logo">
+        </div>
+        <div class="searchBox">
+          <input type="search">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="iconBox1">
+          <a><i class="fa-solid fa-house-user"></i></a>
+          <i class="fa-solid fa-user-group"></i>
+          <i class='fa-solid fa-calendar'></i>
+        </div>
+        <div class="iconBox2">
+          <i class="fa-solid fa-circle-plus"></i>
+          <i class="fa-solid fa-message"></i>
+          <i class="fa-solid fa-bell"></i>
+          <label><a target="_blank" rel="noopener noreferrer"><img src="{% static 'images1/us.png' %}" alt="user"></a></label>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="home">
+    <div class="container">
+      <div class="home-weapper">
+        <div class="home-left">
+          <div class="profile">
+            <img src="{% static 'images1/us.png' %}" alt="user">
+            <h3>{{user}}</h3>
+          </div>
+          <div class="pages">
+            <h3 class="mini-headign">Basketball player</h3>
+            <h3 class="mini-headign">certificate</h3>
+            <label>
+              <img src="{% static 'images1/certificate.jpg' %}" alt="certificate">
+              <span>BCCI</span>
+            </label>
+            <label>
+              <img src="{% static 'images1/certificate1.webp' %}" alt="certificate">
+              <span>ICC</span>
+            </label>
+            <input type="button" class="see-more-btn" value="See more" ><i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="group">
+            <h4 class="mini-headign">Group</h4>
+            <label>
+              <img src="{% static 'images1/cricket.png' %}" alt="Cricket">
+              <span>Cricket</span>
+            </label>
+            <label>
+              <img src="{% static 'images1/basketball.png' %}" alt="Basketball">
+              <span>Basket Ball</span>
+            </label>
+            <label>
+              <img src="{% static 'images1/football.jpg' %}" alt="Football">
+              <span>Football</span>
+            </label>
+            <input type="button" class="see-more-btn" value="See more" ><i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="games">
+            <h4 class="mini-headign">Games</h4>
+            <label>
+              <img src="{% static 'images1/cricket.png' %}" alt="game01">
+              <span>Cricket</span>
+            </label>
+            <label>
+              <img src="{% static 'images1/badminton.jpeg' %}" alt="game02">
+              <span>Badmintion</span>
+            </label>
+            <input type="button" class="see-more-btn" value="See more" ><i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="explore">
+            <h4 class="mini-headign">Explore</h4>
+            <a href="#"><i class="fa-solid fa-user-group"></i> Group</a>
+            <a href="#"><i class="fa-solid fa-star"></i></i> Favorites</a>
+            <a href="#"><i class="fa-solid fa-bookmark"></i></i> Saves</a>
+            <a href="#"><i class="fa-solid fa-clock"></i> Events</a>
+            <a href="#"><i class="fa-solid fa-volleyball"></i> Games</a>
+            <div><label class="darkTheme"> <span></span></label> Apply Dark Theme</div>
+            <button class="see-more-btn">See more <i class="fa-solid fa-angle-down"></i></button>
+          </div>
+        </div>
+        <div class="home-center">
+          <div class="home-center-wrapper">
+            <div class="fb-post1">
+              <div class="fb-post1-container">
+                <div class="fb-post1-header">
+                  <ul>
+                    <li class="active">post</li>
+                  </ul>
+                </div>
+                <div class="fb-p1-main">
+                  <div class="post-title">
+                    <img src="{% static 'images1/us.png' %}" alt="user picture">
+                    <ul>
+                      <li>
+                        <h3>{{user}} <span> . few hours ago</span></h3>
+                      </li>
+                      <li><span>26 Aug at 10:55 AM</span></li>
+                    </ul>
+                    <p>------------------------
+                      <a href="">Going to Tournament</a>----------------------
+                    </p>
+                  </div>
+                  <div class="post-images">
+                    <div class="post-images1">
+                      <img src="{% static 'images1/cricket-tournament-match-design-concept-free-vector.jpg' %}" alt="post images 01">
+                    </div>
+                  </div>
+                  <div class="like-comment">
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-heart"></i>
+                        <span>15K Heart</span>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>22k like</span>
+                      </li>
+                      <li><i class="fa-regular fa-comment-dots"></i> <span>555 comments</span></li>
+                      <li><i class="fa-solid fa-share-from-square"></i> <span>254 share</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="fb-post1-container">
+                <div class="fb-post1-header">
+                  <ul>
+                    <li class="active">post</li>
+                  </ul>
+                </div>
+                <div class="fb-p1-main">
+                  <div class="post-title">
+                    <img src="{% static 'images1/us.png' %}" alt="bcci picture">
+                    <ul>
+                      <li>
+                        <h3>{{user}}<span> . few day ago</span></h3>
+                      </li>
+                      <li><span>20 Aug at 10:55 AM</span></li>
+                    </ul>
+                    <p>------------------------Won District Match
+                      <a href="#">District level competion</a>----------------------
+                    </p>
+                  </div>
+                  <div class="post-images">
+                    <div class="post-images1">
+                      <img src="{% static 'images1/bccievent.jpg' %}" alt="post images 01">
+                    </div>
+                  </div>
+                  <div class="like-comment">
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-heart"></i>
+                        <span>15K Heart</span>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>22k like</span>
+                      </li>
+                      <li><i class="fa-regular fa-comment-dots"></i> <span>555 comments</span></li>
+                      <li><i class="fa-solid fa-share-from-square"></i> <span>254 share</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="fb-post1-container">
+                <div class="fb-post1-header">
+                  <ul>
+                    <li class="active">post</li>
+                  </ul>
+                </div>
+                <div class="fb-p1-main">
+                  <div class="post-title">
+                    <img src="{% static 'images1/us.png' %}" alt="user picture">
+                    <ul>
+                      <li>
+                        <h3>{{user}} <span> . 2 hours ago</span></h3>
+                      </li>
+                      <li><span>26 Aug at 10:55 AM</span></li>
+                    </ul>
+                    <p>------------------------NAtional level football
+                      <a href="#"> Man of the match </a>----------------------
+                    </p>
+                  </div>
+                  <div class="post-images3">
+                    <div class="post-images3">
+                      <img src="{% static 'images1/football tournament.png' %}" alt="post images 01">
+                    </div>
+                  </div>
+                  <div class="like-comment">
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-heart"></i>
+                        <span>15K Heart</span>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>22k like</span>
+                      </li>
+                      <li><i class="fa-regular fa-comment-dots"></i> <span>555 comments</span></li>
+                      <li><i class="fa-solid fa-share-from-square"></i> <span>254 share</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <script>
+            var darkButton = document.querySelector(".darkTheme");
+        
+            darkButton.onclick = function() {
+              darkButton.classList.toggle("button-Active");
+              document.body.classList.toggle("dark-color")
+            }
+          </script>
+          </html>

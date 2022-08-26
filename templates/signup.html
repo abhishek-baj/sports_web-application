@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link  rel="stylesheet" href="{% static 'style.css' %}">
+        <link rel = "icon" href = "{% static 'logo.png' %}" type = "image/x-icon">
+    </head>
+    <body>
+        
+        <div class="title">
+        <center><img class="logo" src="{% static 'logo.png' %}"></center>
+            <h1 class="titlename">SPORTZNOTEBOOK</h1>
+            <h4><a href="/">Login</a></h4>
+            <h4><a href="/about">About</a></h4>
+            <h4><a href="/report">Report</a></h4>
+        </div>
+    <div class="container">
+        <div class="login">
+            <form method="POST" action="/verify" class="entryform">
+             {% csrf_token %}   
+            <center><h3>Sign up</h3></center>
+            <center><h4>Username *</h4></center>
+            <center><input name="name" type="text"><center>
+            <center><h4>Password *</h4></center>
+            <center><input name="passcode" type="password"></center>
+            <center><h4>Retype Password *</h4><center></center>
+            <center><input name="passcode1" type="password"></center>
+            <br><br>
+            <center><button class="submit">Sign Up</button></center>
+            </form>
+            <br>
+            {% for message in messages %}
+            <b style="color:red">{{message}}</b>
+          {% endfor %}
+        </div>
+    </div>
+    <script src=""></script>
+    </body>
+</html>
